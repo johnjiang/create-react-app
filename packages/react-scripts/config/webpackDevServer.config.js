@@ -95,6 +95,7 @@ module.exports = function (proxy, allowedHost) {
     // https://github.com/facebook/create-react-app/issues/293
     // src/node_modules is not ignored to support absolute imports
     // https://github.com/facebook/create-react-app/issues/1065
+    writeToDisk: true,
     watchOptions: {
       ignored: ignoredFiles(paths.appSrc),
     },
